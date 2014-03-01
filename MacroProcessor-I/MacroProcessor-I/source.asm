@@ -1,0 +1,15 @@
+MACRO ABC &a,&b
+PRINT &a
+LOAD A,&b
+MEND
+MACRO DEF &a,&b,&c
+LOAD B,&a
+LOAD B,&b
+ADD A,&c
+MEND
+LOAD A,15
+PRINT C
+ABC 3,4
+DEF 7,8,9
+ABC 10,11
+END
